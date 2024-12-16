@@ -1,0 +1,78 @@
+/* Estilização geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .product-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .product {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+  }
+  
+  .product-image {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .product-name {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .product-description {
+    color: #666;
+    font-size: 14px;
+    margin: 10px 0;
+    text-align: justify;
+  }
+  
+  .product-price {
+    font-size: 30px;
+    color: #e63946;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  /* Estilização do coração */
+  .favorite {
+    margin-top: 15px;
+    display: inline-block;
+    
+    display: flex;
+    justify-content: end;
+  }
+  
+  input[type="checkbox"] {
+    display: none; /* Esconde o checkbox */
+  }
+  
+  .heart {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: lightgray;
+    mask: url('https://cdn-icons-png.flaticon.com/512/833/833472.png') no-repeat center;
+    -webkit-mask: url('https://cdn-icons-png.flaticon.com/512/833/833472.png') no-repeat center;
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  input[type="checkbox"]:checked + .heart {
+    background-color: red;
+  }
+  
